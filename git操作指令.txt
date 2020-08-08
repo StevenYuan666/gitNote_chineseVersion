@@ -1,0 +1,105 @@
+lsgit status 查看文件状态
+git add +文件名 从工作区域提交到暂存区域
+git commit -m"提交描述" 从暂存区域提交到仓库中
+pwd查看当前目录位置
+cd 文件夹名 进入对应的文件夹
+cd.. 返回上一级
+Git init 创建一个空的隐藏仓库
+command + shift + .显示隐藏文件
+mkdir + 文件名 创建一个空的文件夹
+touch + 文件名.扩展名 创建一个java py php这种文件
+Ls 罗列所有的文件
+vi +文件名 按i 进入type模式 对文件进行修改
+按esc 输入:wq进行保存退出
+cat +文件名 查看文件的内容
+rm -rf +文件名 删除文件
+git rm +文件名 删除缓存区域的文件
+git push 将本地仓库提交到远程
+git clone+仓库地址 克隆github上的代码到本地
+git config --list查看当前设置的信息
+
+上传到github基本流程：
+创建文件 vi +文件名 按i 进入type模式 对文件进行修改
+git status 
+git add +文件名 从工作区域提交到暂存区域
+git status
+git commit -m""  
+git status
+然后git push同步到github
+
+ 
+
+添加基本流程：
+git status 
+git add +文件名 从工作区域提交到暂存区域
+git status
+git commit -m""  
+git status 
+
+修改基本流程：
+vi +文件名 按i 进入type模式 对文件进行修改
+退出按esc 输入:wq进行保存
+cat +文件名 查看文件的内容
+git status 
+git add +文件名 从工作区域提交到暂存区域
+git status
+git commit -m""  
+git status 
+
+删除基本流程：
+git status 
+rm -rf +文件名 删除文件
+git status 
+git rm +文件名 删除缓存区域的文件
+git status 
+
+
+
+设置用户名
+git config --global user.name 'StevenYuan666'
+设置邮箱
+git config --global user.email 'ye.yuan3@mail.mcgill.ca'
+
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Forward-port local commits to the updated upstream head
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+
