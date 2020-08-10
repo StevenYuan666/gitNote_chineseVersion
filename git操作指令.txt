@@ -17,6 +17,8 @@ git rm +文件名 删除缓存区域的文件
 git push 将本地仓库提交到远程
 git clone+仓库地址 克隆github上的代码到本地
 git config --list查看当前设置的信息
+git branch +名字 新建分支
+git checkout +名字切换分支
 
 上传到github基本流程：
 创建文件 vi +文件名 按i 进入type模式 对文件进行修改
